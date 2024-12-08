@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Just+Another+Hand&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Just Another Hand', cursive;
+    background-color: #CDC1FF;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between; 
+    width: 100%;
+    height: 41vh; 
+    position: relative;
+    background-color: #CDC1FF; 
+    overflow: hidden; 
+}
+.menu-icone,  .menu-icone-fecha{
+    cursor: pointer;
+    width: 30px;
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    z-index: 12;/*mds tava me matando pra ver se era o js q n tava funcionando quando clicava ou o html mas era isso ai KKKK a imagem tava na frente, que odio*/
+    align-self: flex-start;
+}
+
+header #diva{
+    width: 100%;
+    height: 90%;
+    object-fit: cover; 
+    position: absolute; 
+}
+
+header .texto-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4.5em; 
+    color: #FFFFFF;
+    text-shadow: 0 0 2px #000000, 
+                 0 0 5px #030055, 
+                 0 0 10px #caecff, 
+                 0 0 20px #000000;
+    z-index: 2; /* texto em cima img*/
+    left: 15%;
+    top: 65%;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #CDC1FF;
+    max-width: 95vw;
+    height: 100vh;
+    border: 0.5px solid #ccc;
+    border-radius: 30px;
+    overflow-y: hidden;
+    &:hover{
+        overflow-y: scroll;
+    }
+    box-shadow: 0px 0px 150px rgba(14, 4, 76);
+
+}
+.titulos {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    justify-content: center;
+    font-size: 2.5em; 
+    color: #FFFFFF;
+    text-shadow: 1px 1px 5px #000000;
+}
+.titulos-sem-sombra {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    justify-content: center;
+    font-size: 3em; 
+    color: #8979ee;
+}
+.main{
+    background-color: rgb(162, 165, 165);
+    min-height: 100px;
+}
+.cards {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.card{
+    box-shadow: 2px 2px 1px #797070;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffffff;   
+    flex-basis:30%;
+    border-radius: 10%;
+    
+    margin: 5px;
+}
+.card img{
+    width: 60px;
+    background-color: #FFCCEA;   
+    border-radius: 20%;
+}
+.card, .reserva, .menu-icone {
+    transition: transform 0.3s ease; 
+}
+
+.card:hover, .reserva:hover, .menu-icone:hover {
+    transform: scale(1.1); 
+}
+.card h2 {
+    color: #5641ab;
+    font-size: 1.6em;
+    font-weight: 400;
+    text-align: center;
+}
+.reserva{
+    margin:auto;
+    margin-top: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh; 
+    background-color: #FFCCEA;
+    border: #b4b4b4 1px solid;
+    border-radius: 4%;
+    max-width: 80vw; 
+    box-shadow: 0px 4px 10px #9584ff;
+ 
+}
+.reserva img{
+    width: 50px;
+
+}
+.reserva  button{
+    font-family: 'Just Another Hand', cursive;
+    background: transparent;
+    border: none;
+    font-size: 3em;
+}
+.menu-icone-fecha{
+    z-index: 100;
+}
+
+.menu-hamburguer {
+    display: block;
+    top: 0;
+    z-index: 100;
+    padding-top: 14%;
+    border-right: #eee7e9 2px solid;
+    left: 0;
+    position: fixed; 
+    width: 60vw;
+    height: 100vh;
+    background-color: #FFF6E3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.menu-hamburguer h2{
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: 400;
+    color: #493628;
+    line-height: 30px;
+    padding-bottom: 10px;
+    border-bottom: #9e9e9e 1px solid;
+
+}
+.fechado {
+    display: none ;
+}
+
+.menu-hamburguer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-hamburguer ul li {
+    padding: 20px;
+    text-align: center;
+    border-bottom: #9e9e9e 1px solid;
+}
+.menu-hamburguer ul li:hover{
+    background-color: #ffffff;
+
+}
+.menu-hamburguer img{
+    padding-left: 15% ;
+    padding-top: 16%;
+    width: 70%;
+}
+.menu-hamburguer ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 2em;
+}
+
+
+.paragrafos {
+    font-weight: 400;
+    font-size: 1.3em;
+    text-align: center;
+
+}
+
+.login, .cadastro{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-basis: 90%;
+    border-radius: 8%;
+    padding: 5%;
+}
+.login button, .cadastro button {
+    box-shadow: none;
+    background-color: #00C853;
+    padding: 4%;
+    font-family: 'Just Another Hand', cursive;
+    font-size: 1.8em;
+    color: #0f0c0a;
+    height: 5vh;
+}
+.login #nome, #senha, .cadastro #nome, .cadastro #senha {
+    width: 80%;
+
+}
+.login label , .cadastro label{
+    font-size: 1.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.preloader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: #BFECFF;
+    position: fixed;
+    z-index: 100;
+}
+
+.preloader img {
+    background: none;
+    box-shadow: #FF8A8A ;
+    border-radius: 50%;
+
+}
+
+.preloader h1,.texto-logo {
+    text-align: center;
+    font-family: "Just Another Hand", cursive;
+    font-size: 25vw;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-shadow: 0 0 2px #000000, 
+    0 0 2px #030055, 
+    0 0 2px #caecff, 
+    0 0 2px #000000;
+
+}
+
