@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
     <title>A Diva Do Picote</title>
 </head>
-<body>
+<body >
     <div class="preloader">
         <img src="img/splash.png" alt="">
         <h1>A Diva Do Picote </h1>
@@ -28,30 +29,36 @@
                 <img src="img/list.svg" class="menu-icone" alt="" onclick="MenuAbreFecha()">
                 <img src="img/arrow-left.svg" class="menu-icone-fecha fechado" alt="" onclick="MenuAbreFecha()">
             </div>
-            <img id="diva" src="img/splash.png" alt="">
+            <picture id="diva">
+                <img src="img/splash.png" alt="">
+            </picture>
             <h1 class="texto-logo">Se Torne Diva(o)</h1>
         </header>
-        <main>
             <div class="cards">
                 <div class="card cadastro">
                     <h1 class="titulos-sem-sombra" >Cadastro</h1>
-                    <form  class="cadastro" action="login.js">
+                    <form  class="cadastro" onsubmit="cadastrarUsuario(event)" >
                         <label for="nome">Nome:</label>
                         <input type="text" id="nome" name="nome" required>
                         <label for="senha">Senha:</label>
                         <input type="password" id="senha" name="senha" required>
-                        <button class="reserva" type="submit">✅</button>
+                        <button class="reserva" type="submit"><img src="img/check-mark.png" alt=""></button>
+                        
                     </form>
                 </div>
             <div class="reserva">
-                <img src="img/hair-dryer.png" alt="" style="transform: scaleX(-1)";
-">
-                <button>Entrar</button>
+                <img src="img/hair-dryer.png" alt="" style="transform: scaleX(-1);">
+                <a href="login.html">Entrar</a>
                 <img src="img/hair-dryer.png" alt="">
 
             </div>
-        </main>
+
     </section>
+    <div id="modal-login" class="modal">
+        <h2>Mensagem</h2>
+    </div>
+    <div class="fundo-escuro"></div>
+
     <script src="login.js"></script>
 </body>
 </html>

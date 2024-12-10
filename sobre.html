@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="media-queries.css">
     <title>Sobre</title>
 </head>
 <body>
-    <div class="preloader">
-        <img src="img/splash.png" alt="">
-        <h1>A Diva Do Picote </h1>
-    </div>
+    
     <section  class="img-logo">
         <header>
             <div class="menu">
@@ -24,17 +22,18 @@
                         <li><a href="cadastro.html">Cadastro</a></li>
 
                     </ul>
-                    <img src="img/menu-img.png" alt="">
                 </div>
                 <img src="img/list.svg" class="menu-icone" alt="" onclick="MenuAbreFecha()">
                 <img src="img/arrow-left.svg" class="menu-icone-fecha fechado" alt="" onclick="MenuAbreFecha()">
             </div>
-            <img id="diva" src="img/splash.png" alt="">
+            <picture id="diva">
+                <img src="img/splash.png" alt="">
+            </picture>
             <h1 class="texto-logo">Sobre a Diva  </h1>
         </header>
         <main>
             <div class="cards">
-                <div class="card" style="flex-basis:100%">
+                <div class="card" id="sobre" style="flex-basis:100%">
                     <h2 >⭐A Diva do Picote nasceu do sonho de transformar cortes em arte. Aqui, cada cliente sai se sentindo uma verdadeira estrela, com um estilo único e deslumbrante. Agende seu momento e seja a próxima diva a brilhar!⭐</h2>
 
                 </div>
@@ -53,6 +52,10 @@
             </div>
         </main>
     </section>
+    <div id="modal-login" class="modal">
+        <h2>Mensagem</h2>
+    </div>
+    <div class="fundo-escuro"></div>
     <script src="login.js"></script>
 </body>
 </html>

@@ -1,0 +1,158 @@
+
+/*Para Tablets*/
+@media screen and  (min-width:480px) and  (max-width: 768px) {
+    .agenda .pin{
+        width:10vw;
+        margin-bottom: -7%;
+    }
+    .agenda .reserva{
+        font-size: 2.4em;
+    }
+    .agenda .reserva img{
+        width: 9vh;
+    }
+    .menu-hamburguer{
+        max-width: 40vw;
+    }
+    .menu-icone{
+        min-width: 8vw;
+    }
+    #diva img{
+        min-width:60vh;
+        max-width:68vh;
+    }
+    .card.login,.card.cadastro{
+        min-width: 50vw;
+        max-height: 35vh;
+    }
+    .usuario{
+        width: 100vw;
+        font-size: 1.5em;
+        justify-content: space-between;
+    }
+    .usuario img{
+        width: 50px;
+    }
+    .modal{
+        align-self: center;
+    }
+    .preloader h1 {
+        font-size: 7em;
+        align-self: center;
+    }
+}
+
+/*Para Not*/
+
+@media screen and  (min-width:768px) and  (max-width: 2000px) {/*coloquei 1100 pq meu not tem + ou mns isso*/
+    .agenda .pin{
+        width:6.7vw;
+        margin-bottom: -4%;
+    }
+    .agenda .reserva{
+        font-size: 2.8em;
+    }
+    .agenda .reserva img{
+        width: 10vh;
+    }
+    .reserva{
+        min-height: 13vh;
+    }
+    .menu-hamburguer{
+        max-width: 20vw;
+        font-size: 1.5em;
+        line-height:8vh;
+        padding-top: 6vh;
+    }
+    .menu-hamburguer h2{
+        font-size: 2em;
+        line-height: 8vh;
+    }
+    main .cards .card{
+        min-width: 9vw;
+
+    }
+    main .cards .card img, main .cards .card p{
+        text-align: center;
+        font-size: 2em;
+        min-width: 7vw;
+    }
+    main .cards{
+        padding-top: 5vh;
+    }
+    .menu-icone{
+        min-width: 4vw;
+    }
+    .card.login,.card.cadastro{
+        min-width: 40vw;
+        max-height: 35vh;
+    }
+    .card label{
+        font-size: 2em;
+
+    }
+    .titulos-sem-sombra {
+        margin-top: 3vh;
+    }
+    .login input,.cadastro input{
+        max-width: 40vw;
+        min-height: 5vh;
+    }
+
+    .card.login button,.card.cadastro button{
+        width: 30%;
+        margin-top: 2vh;
+        min-height:6vh;
+    }
+    form .reserva img, form #loginb{
+        min-width: 3vw;
+        max-width: 4vw;
+    }
+    .reserva {
+        margin-top: 1vh;
+    }
+    .texto-servicos img{
+        max-width: 9vw;
+    }
+    .form-container label{
+        font-size: 1.5em;
+    }
+    .form-container input{
+        font-size: 0.8em;
+        width: 50%;
+        min-height:5vh;
+    }
+    .form-container .reserva {
+        min-width: 20vw;
+        max-width: 30vw;
+    }
+    .cards  h2{
+        font-size: 2.5em;
+    }
+    .cards #sobre{
+        max-width: 70vw;
+        border-radius: 10% 20% 10% 20%;
+    }
+    .card{
+        max-width: 20vw;
+    }
+    .usuario{
+        width: 100vw;
+        font-size: 1.5em;
+        justify-content: space-between;
+    }
+    .usuario img{
+        width: 50px;
+    }
+    .modal{
+        margin: auto;
+        top: 45%;
+    }
+    .preloader h1 {
+        font-size: 7em;
+        align-self: center;
+    }
+    .preloader{
+        top: 0;
+    }
+}

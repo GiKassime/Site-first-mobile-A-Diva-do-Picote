@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
+
     <title>A Diva Do Picote</title>
 </head>
 <body>
-    <div class="preloader">
-        <img src="img/splash.png" alt="">
-        <h1>A Diva Do Picote </h1>
-    </div>
+    
     <section  class="img-logo">
         <header>
             <div class="menu">
@@ -27,50 +26,20 @@
                 <img src="img/list.svg" class="menu-icone" alt="" onclick="MenuAbreFecha()">
                 <img src="img/arrow-left.svg" class="menu-icone-fecha fechado" alt="" onclick="MenuAbreFecha()">
             </div>
-            <img id="diva" src="img/splash.png" alt="">
-            <h1 class="texto-logo">Agende o Picote</h1>
+            <picture id="diva">
+                <img src="img/splash.png" alt="">
+            </picture>
+            <h1 class="texto-logo">Picotes Agendados</h1>
         </header>
-        <main>
-            <div class="cards">
-                <div class="card">
-                    <img src="img/salon.png" alt="">
-                    <p>Cortes</p>
-
-                </div>
-                <div class="card">
-                    <img src="img/salon.png" alt="">
-                    <p>Cortes</p>
-
-                </div>
-                <div class="card">
-                    <img src="img/salon.png" alt="">
-                    <p>Cortes</p>
-
-                </div>
-                <div class="card">
-                    <img src="img/salon.png" alt="">
-                    <p>Cortes</p>
-
-                </div>
-                <div class="card">
-                    <img src="img/salon.png" alt="">
-                    <p>Cortes</p>
-
-                </div>
-                <div class="card">
-                    <img src="img/salon.png" alt="">
-                    <p>Cortes</p>
-                </div>
-            </div>
-            <div class="reserva">
-                <img src="img/hair-dryer.png" alt="" style="transform: scaleX(-1)";
-">
-                <button>Reservar agora</button>
-                <img src="img/hair-dryer.png" alt="">
-
-            </div>
-        </main>
+        <div class="agenda">
+            <img class="pin" src="img/pin.png" alt="">
+        </div>
     </section>
+    <div id="modal-login" class="modal">
+        <h2>Mensagem</h2>
+    </div>
+    <div class="fundo-escuro"></div>
     <script src="login.js"></script>
+    <script src="agenda.js"></script>
 </body>
 </html>
