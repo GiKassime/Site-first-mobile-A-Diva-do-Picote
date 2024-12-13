@@ -18,12 +18,12 @@
         min-width: 8vw;
     }
     #diva img{
-        min-width:60vh;
-        max-width:68vh;
+        min-width:50vh;
+      max-width:60vh;
     }
     .card.login,.card.cadastro{
-        min-width: 50vw;
-        max-height: 35vh;
+        min-width: 40vw;
+        min-height: 25vh;
     }
     .usuario{
         width: 100vw;
@@ -40,6 +40,19 @@
         font-size: 7em;
         align-self: center;
     }
+    .login input,.cadastro input{
+        max-width: 60vw;
+        min-height:3vh;
+    }
+    button .reserva{
+        padding: 0;
+    }
+    .form-container form select{
+        min-width: 50vw;
+        height: 3vh;
+      
+    }
+    
 }
 
 /*Para Not*/
@@ -125,6 +138,10 @@
     .form-container .reserva {
         min-width: 20vw;
         max-width: 30vw;
+    }
+    .form-container form select{
+        width: 50vw;
+        height: 5vh;
     }
     .cards  h2{
         font-size: 2.5em;
