@@ -18,6 +18,7 @@ body {
 }
 
 header {
+    padding-top: 2vh;
     display: grid; 
     place-items: center;
     width: 100%;
@@ -36,7 +37,12 @@ header {
     align-self: flex-start;
 }
 
+.menu-icone-fecha{
+    position: fixed;
+}
+
 header #diva{
+    pointer-events: none;
     margin: auto;
     display: flex;
     object-fit: contain;
@@ -65,7 +71,7 @@ header .texto-logo {
 section  {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     background-color: #CDC1FF;
     min-height: 100vh;
@@ -120,7 +126,7 @@ section  {
     transition: transform 0.3s ease; 
 }
 
-.card:hover, .reserva:hover, .menu-icone:hover {
+.card:hover, .reserva:hover, .menu-icone:hover,.usuario img:hover {
     transform: scale(1.05); 
 }
 .card h2 {
@@ -331,11 +337,11 @@ section  {
   
 }
 
-.form-container form #observacoes {
-    max-width: 80vw;
 
+.form-container form #observacoes{
+    min-width: 70vw;
+    max-width: 70vw;
 }
-
 .form-container, .agenda{
     padding: 0;
 }
@@ -403,8 +409,9 @@ section  {
     overflow: visible;
     margin-top: 5vh;
     display: flex;
-    justify-content: space-between;
-    font-size: 1.5em;
+    justify-content: space-evenly;
+    font-size: 1.6em;
+    overflow-x: scroll;
 }
 .agenda h2{
     font-weight: 400;
@@ -417,7 +424,7 @@ section  {
     border-radius: 20% 20% 0% 0%;
     flex-direction: column;
     background-color: #F2F9FF;
-    height: 100%;
+    min-height: 50vh;
     width: 100%;
     padding: 10%;
 }

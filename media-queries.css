@@ -7,6 +7,7 @@
     }
     .agenda .reserva{
         font-size: 2.4em;
+        overflow-x: hidden;
     }
     .agenda .reserva img{
         width: 9vh;
@@ -64,6 +65,7 @@
     }
     .agenda .reserva{
         font-size: 2.8em;
+        overflow-x: hidden;
     }
     .agenda .reserva img{
         width: 10vh;
@@ -123,6 +125,10 @@
     }
     .reserva {
         margin-top: 1vh;
+    }
+    .form-container form #observacoes{
+        max-width: 50vw;
+        min-width: 50vw;
     }
     .texto-servicos img{
         max-width: 9vw;

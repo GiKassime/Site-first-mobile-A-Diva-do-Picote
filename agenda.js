@@ -31,7 +31,7 @@ function carregarReservas() {
             servico.textContent = reserva.servico;
 
             const img = document.createElement('img');
-            img.src = "img/hairstyle.png";  
+            img.src = "img/servico/"+reserva.servico+".png";  
 
             div.appendChild(img);
             div.appendChild(nome);
@@ -39,7 +39,7 @@ function carregarReservas() {
             div.appendChild(hora);
             div.appendChild(servico);
 
-            divMaior.appendChild(div);
+            divMaior.append(div);
         });
     }
 }

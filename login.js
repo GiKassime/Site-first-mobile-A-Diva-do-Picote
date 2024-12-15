@@ -10,7 +10,7 @@ window.onload = () => {
         setTimeout(() => {
             preloader.style.display = "none"; 
             deslogarUsuarios();
-        }, 1000);
+        }, 5000);
     } else {
         const usuarioLogado = usuarios.find(usuario => usuario.logado === true); 
         if (!usuarioLogado) {
