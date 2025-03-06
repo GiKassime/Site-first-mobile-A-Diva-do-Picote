@@ -6,7 +6,7 @@ let usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
 
 
 window.onload = () => {
-    if (window.location.pathname.endsWith('login.html') || window.location.pathname.endsWith('cadastro.html')) {
+    if (window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('cadastro.html')) {
         setTimeout(() => {
             preloader.style.display = "none"; 
             deslogarUsuarios();
@@ -18,7 +18,7 @@ window.onload = () => {
             mensagem.textContent = "Faça seu Login primeiro para desfrutar de nossos serviços!";
             modal.style.backgroundColor = "#B6FFA1";
             setTimeout(() => {
-                window.location.href = 'login.html';
+                window.location.href = 'index.html';
                 Modal();
             }, 1500);
         }
@@ -98,7 +98,7 @@ function cadastrarUsuario(event){
     modal.style.backgroundColor = "#B6FFA1"
     setTimeout(() => {
         Modal()
-        window.location.href = 'login.html'
+        window.location.href = 'index.html'
 
     }, 1500);
 }
@@ -119,8 +119,8 @@ function deslogarUsuarios() {
     });
     console.log(usuarios);
     localStorage.setItem('usuarios', JSON.stringify(usuarios)); 
-    if (!window.location.pathname.endsWith('login.html') && !window.location.pathname.endsWith('cadastro.html')) {
-        window.location.href = 'login.html'
+    if (!window.location.pathname.endsWith('index.html') && !window.location.pathname.endsWith('cadastro.html')) {
+        window.location.href = 'index.html'
     }
 }
 
